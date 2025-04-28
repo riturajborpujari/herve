@@ -11,5 +11,15 @@ The server processes only one connection at a time, and closes the connection
 after successful transfer of the response data. Basic details of the request /
 response is logged to console.
 
-## Implementation
+## Usage
+Running `make` will build the binary `herve` on the local directory. 
 
+Run the binary like
+
+`./herve DIR_TO_SERVE PORT` where `DIR_TO_SERVE` is the root directory for the
+server, and `PORT` is the PORT to serve on
+
+## Todo
+- Handle multiple connections at once
+- Allow configurations for directory serving
+- Add HTTPS capabilities
